@@ -37,6 +37,46 @@ body {
   top: 50vw;
 } */
 
+@font-face {
+  font-family: Sahel;
+  src: url("../font/Sahel.eot");
+  src: url("../font/Sahel.eot?#iefix") format("embedded-opentype"),
+    url("../font/Sahel.woff2") format("woff2"),
+    url("../font/Sahel.woff") format("woff"),
+    url("../font/Sahel.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Sahel;
+  src: url("../font/Sahel-Bold.eot");
+  src: url("../font/Sahel-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/Sahel-Bold.woff2") format("woff2"),
+    url("../font/Sahel-Bold.woff") format("woff"),
+    url("../font/Sahel-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Sahel;
+  src: url("../font/Sahel-Light.eot");
+  src: url("../font/Sahel-Light.eot?#iefix") format("embedded-opentype"),
+    url("../font/Sahel-Light.woff2") format("woff2"),
+    url("../font/Sahel-Light.woff") format("woff"),
+    url("../font/Sahel-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Sahel;
+  src: url("../font/Sahel-SemiBold.eot");
+  src: url("../font/Sahel-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../font/Sahel-SemiBold.woff2") format("woff2"),
+    url("../font/Sahel-SemiBold.woff") format("woff"),
+    url("../font/Sahel-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
 /************************************/
 /********** [ NAVIGATION ] **********/
 /************************************/
@@ -75,5 +115,23 @@ body {
   filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
 }
 .welcome-part h2 {
-  font-size: 5em;
+  display: block;
+  text-align: center;
+  direction: rtl;
+  font-family: Sahel, open sans, Tahoma, helvetica, arial, sans-serif;
+  font-size: 100px;
+  word-spacing: -15px;
+  font-weight: bold;
+  margin-top: 80px;
+  opacity: 0;
+}
+.welcome-part small {
+  display: block;
+  text-align: center;
+  direction: rtl;
+  font-family: Sahel, open sans, Tahoma, helvetica, arial, sans-serif;
+  font-size: 40px;
+  margin-top: -20px;
+  font-style: italic;
+  font-weight: lighter;
 }

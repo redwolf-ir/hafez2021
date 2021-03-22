@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 var tl = gsap.timeline();
 
 tl.to(
@@ -90,42 +88,17 @@ tl.to(
   )
   .to("#lake_shadow", { duration: 0.5, x: 8, yoyo: true, repeat: -1 }, 0);
 
-// gsap.to(".welcome-part", {
-//   scrollTrigger: {
-//     trigger: ".welcome-part",
-//     start: "top top",
-//     scrub: true,
-//   },
-//   borderRadius: "0",
-//   duration: 1,
-// });
-// gsap.to("#balon", {
+gsap.registerPlugin(ScrollTrigger);
 
-//   // repeatDelay: 0,
-// });
-// gsap.to("#abr_x5F_2", {
-//   duration: 2,
-//   opacity: 1,
-//   x: 200,
-//   ease: "none",
-//   repeat: -1,
-//   yoyo: true,
-//   // repeatDelay: 0,
-// });
-// gsap.fromTo(
-//   "#abr_x5F_2",
-//   { opacity: 1, x: 200, duration: 4 },
-//   {
-//     duration: 4,
-//     opacity: 0,
-//     x: -100,
-//     ease: "none",
-//     repeat: -1,
-//   }
-// );
-
-// gsap.fromTo(
-//   "#bird_x5F_1",
-//   { opacity: 1, x: 0, duration: 4 },
-//   { duration: 4, opacity: 0, x: 200, ease: "none", repeat: -1 }
-// );
+gsap.to(".welcome-part h2", {
+  scrollTrigger: {
+    markers: true,
+    // scrub: true,
+    trigger: ".welcome-part h2",
+    start: "bottom bottom", // avali object, dovomi box
+    toggleActions: "restart none none none",
+  },
+  y: -30,
+  opacity: 1,
+  duration: 1.5,
+});
