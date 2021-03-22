@@ -1,0 +1,79 @@
+/************************************/
+/********** [ NAVIGATION ] **********/
+/************************************/
+/* .upper-row .circle[data-v-0b8ed1aa] {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 0;
+  width: 100%;
+  height: 100vw;
+  background-color: #f3eee8;
+  border-radius: 50%;
+} */
+body {
+  background-color: #f3eee8;
+  margin: 0;
+  padding: 0;
+}
+/* .welcome-part .circle {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 0;
+  width: 100%;
+  height: 100vw;
+  background-color: #f8c1ca;
+  border-radius: 50%;
+} */
+
+/* .warper {
+  width: 100%;
+  height: 50vw;
+  background-color: #ffe699;
+  position: absolute;
+  top: 50vw;
+} */
+
+/************************************/
+/********** [ NAVIGATION ] **********/
+/************************************/
+.navigation {
+  background-color: red;
+  width: 100%;
+}
+
+/**************************************/
+/********** [ WELCOME PART ] **********/
+/**************************************/
+.welcome-part {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  line-height: 0;
+  width: 100%;
+  height: 100vw;
+  background-color: #ffe699;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  margin-top: 200px;
+}
+.hafezie {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.hafezie svg {
+  width: 800px;
+  margin-top: -100px;
+}
+#hafezie_1_:hover {
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
+}
+.welcome-part h2 {
+  font-size: 5em;
+}
