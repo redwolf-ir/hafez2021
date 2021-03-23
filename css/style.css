@@ -13,6 +13,7 @@
   border-radius: 50%;
 } */
 body {
+  direction: rtl;
   background-color: #f3eee8;
   margin: 0;
   padding: 0;
@@ -36,47 +37,26 @@ body {
   position: absolute;
   top: 50vw;
 } */
-
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+.party {
+  margin: 64px 0;
+}
 @font-face {
-  font-family: Sahel;
-  src: url("../font/Sahel.eot");
-  src: url("../font/Sahel.eot?#iefix") format("embedded-opentype"),
-    url("../font/Sahel.woff2") format("woff2"),
-    url("../font/Sahel.woff") format("woff"),
-    url("../font/Sahel.ttf") format("truetype");
+  font-family: Nahid;
+  src: url("../font/Nahid-FD.eot");
+  src: url("../font/Nahid-FD.eot?#iefix") format("embedded-opentype"),
+    url("../font/Nahid-FD.woff2") format("woff2"),
+    url("../font/Nahid-FD.woff") format("woff"),
+    url("../font/Nahid-FD.ttf") format("truetype");
   font-weight: normal;
 }
-
-@font-face {
-  font-family: Sahel;
-  src: url("../font/Sahel-Bold.eot");
-  src: url("../font/Sahel-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../font/Sahel-Bold.woff2") format("woff2"),
-    url("../font/Sahel-Bold.woff") format("woff"),
-    url("../font/Sahel-Bold.ttf") format("truetype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: Sahel;
-  src: url("../font/Sahel-Light.eot");
-  src: url("../font/Sahel-Light.eot?#iefix") format("embedded-opentype"),
-    url("../font/Sahel-Light.woff2") format("woff2"),
-    url("../font/Sahel-Light.woff") format("woff"),
-    url("../font/Sahel-Light.ttf") format("truetype");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: Sahel;
-  src: url("../font/Sahel-SemiBold.eot");
-  src: url("../font/Sahel-SemiBold.eot?#iefix") format("embedded-opentype"),
-    url("../font/Sahel-SemiBold.woff2") format("woff2"),
-    url("../font/Sahel-SemiBold.woff") format("woff"),
-    url("../font/Sahel-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-}
-
 /************************************/
 /********** [ NAVIGATION ] **********/
 /************************************/
@@ -84,22 +64,23 @@ body {
   background-color: red;
   width: 100%;
 }
-
+.scrolling-slider {
+  scroll-snap-type: y mandatory;
+}
+.scrolling-slider aside {
+  scroll-snap-align: center;
+}
 /**************************************/
 /********** [ WELCOME PART ] **********/
 /**************************************/
 .welcome-part {
-  content: "";
   position: relative;
-  top: 0;
-  left: 0;
-  line-height: 0;
   width: 100%;
   height: 100vw;
+  margin-top: 200px;
   background-color: #ffe699;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
-  margin-top: 200px;
 }
 .hafezie {
   width: 100%;
@@ -115,23 +96,59 @@ body {
   filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.3));
 }
 .welcome-part h2 {
-  display: block;
-  text-align: center;
-  direction: rtl;
-  font-family: Sahel, open sans, Tahoma, helvetica, arial, sans-serif;
-  font-size: 100px;
-  word-spacing: -15px;
-  font-weight: bold;
-  margin-top: 80px;
-  opacity: 0;
+  font-family: Nahid, open sans, Tahoma, helvetica, arial, sans-serif;
+  font-weight: bolder;
+  font-size: 6vw;
+  word-spacing: -10px;
+  margin: 0;
+  padding: 0;
 }
-.welcome-part small {
-  display: block;
-  text-align: center;
-  direction: rtl;
-  font-family: Sahel, open sans, Tahoma, helvetica, arial, sans-serif;
-  font-size: 40px;
-  margin-top: -20px;
+.welcome-part h2::before,
+.welcome-part h2::after {
+  content: '"';
+  font-style: italic;
+}
+
+.welcome-part span {
+  font-family: Nahid, open sans, Tahoma, helvetica, arial, sans-serif;
   font-style: italic;
   font-weight: lighter;
+  font-size: 2vw;
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+@media only screen and (max-width: 961px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media only screen and (max-width: 721px) {
+  .container {
+    width: 480px;
+  }
+}
+@media only screen and (max-width: 481px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 301px) {
+}
+/******************************************/
+/********** [ ADAB HAFEZ KHANI ] **********/
+/******************************************/
+.introduction-part {
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 100vw;
+  background-color: #ffffff;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  margin-top: -50%;
 }
